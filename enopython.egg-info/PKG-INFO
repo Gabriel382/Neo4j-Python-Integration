@@ -1,12 +1,31 @@
 Metadata-Version: 2.1
 Name: enopython
-Version: 0.1.0
+Version: 0.1.1
 Summary: Python library to help faster upload of data into Neo4J
 Home-page: UNKNOWN
 Author: Gabriel Henrique Alencar Medeiros and Ramiz Hagverdiyev
+Author-email: <henrique382@gmail.com>
 License: MIT
+Keywords: python,neo4j,knowledge graph,ontology,big data
 Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intend Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Neo4j's Cypher :: 4.4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
 License-File: LICENSE
 
-UNKNOWN
+# Neo4j-Python-Integration
+Code to facilitate access between Python and Neo4j, with tips on how to increase data sending between them.
+
+
+Change Log
+==========
+
+0.1.1 (11/05/2022)
+-------------------
+- Setup Template and Neo4j Wrapper
 

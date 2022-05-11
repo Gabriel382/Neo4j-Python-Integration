@@ -1,12 +1,29 @@
 from setuptools import find_packages, setup
 
+VERSION = '0.1.1'
+DESCRIPTION = 'Python library to help faster upload of data into Neo4J'
+
+classifiers_list = [
+    "Development Status :: 1 - Planning",
+    "Intend Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Neo4j's Cypher :: 4.4",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Unix",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows :: Windows 10",
+]
+
 setup(
     name='enopython',
     packages=find_packages(include=['neopython']),
-    version='0.1.0',
-    description='Python library to help faster upload of data into Neo4J',
+    version=VERSION,
+    description=DESCRIPTION,
+    long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
     author='Gabriel Henrique Alencar Medeiros and Ramiz Hagverdiyev',
+    author_email='<henrique382@gmail.com>',
     license='MIT',
+    keywords=['python','neo4j','knowledge graph','ontology', 'big data'],
     install_requires=[
         'atomicwrites==1.4.0',
         'attrs==21.4.0',
@@ -47,5 +64,6 @@ setup(
     setup_requires=['pytest-runner'],
     tests_require=['pytest==4.4.1'],
     test_suite='tests',
+    classifiers=classifiers_list,
 )
 
